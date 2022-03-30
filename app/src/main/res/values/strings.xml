@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">kuis_muhammad_reda</string>
+    <string name="nama_pelanggan">Nama Pelanggan</string>
+    <string name="alamat_pelanggan">Alamat Pelanggan</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="pria">Pria</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="tipe_pelanggan">Tipe Pelanggan</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silver</string>
+    <string name="biasa">Biasa</string>
+    <string name="android">Android</string>
+    <string name="iphone">Iphone</string>
+    <string name="windows_phone">Windows Phone</string>
+    <string name="jumlah_barang">Jumlah Barang</string>
+    <string name="proses">Proses</string>
+    <string name="cancel">Cancel</string>
+    <string name="nota_transaksi">NOTA TRANSAKSI</string>
+    <string name="tipe_member">Tipe Member :</string>
+    <string name="nama_pelanggan2">Nama Pelanggan :</string>
+    <string name="jenis_kelamin2">Jenis Kelamin :</string>
+    <string name="alamat_pelanggan2">Alamat Pelanggan :</string>
+    <string name="nama_barang2">Nama Barang :</string>
+    <string name="jumlah_barang2">Jumlah Barang :</string>
+    <string name="harga">Harga :</string>
+    <string name="total_harga">Total Harga :</string>
+    <string name="discount_harga">Discount Harga :</string>
+    <string name="discount_member">Discount Member :</string>
+    <string name="jumlah_bayar">Jumlah Bayar :</string>
+    <string name="terima_kasih_sudah_berbelanja_di_tempat_kami">Terima Kasih sudah berbelanja di tempat kami</string>
+    <string name="print_nota">PRINT NOTA</string>
+    <string name="muhammad_reda">Muhammad Reda</string>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvnotaTransaksi"
+        android:text="@string/nota_transaksi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvTipeMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvnotaTransaksi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/tipe_member" />
+
+    <TextView
+        android:id="@+id/tvnamaPelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTipeMember"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/nama_pelanggan2" />
+
+    <TextView
+        android:id="@+id/tvJenisKelamin"
+        android:layout_below="@+id/tvnamaPelanggan"
+        android:layout_marginTop="10dp"
+        android:text="@string/jenis_kelamin2"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/tvAlamatPelanggan"
+        android:layout_below="@+id/tvJenisKelamin"
+        android:layout_marginTop="10dp"
+        android:text="@string/alamat_pelanggan2"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvNamaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAlamatPelanggan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/nama_barang2" />
+
+    <TextView
+        android:id="@+id/tvJumlahBarang"
+        android:layout_below="@+id/tvNamaBarang"
+        android:layout_marginTop="10dp"
+        android:text="@string/jumlah_barang2"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvHarga"
+        android:layout_below="@+id/tvJumlahBarang"
+        android:layout_marginTop="10dp"
+        android:text="@string/harga"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvTotalHarga"
+        android:layout_below="@+id/tvHarga"
+        android:layout_marginTop="10dp"
+        android:text="@string/total_harga"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvDiscHarga"
+        android:layout_below="@+id/tvTotalHarga"
+        android:layout_marginTop="10dp"
+        android:text="@string/discount_harga"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvDiscMember"
+        android:layout_below="@+id/tvDiscHarga"
+        android:layout_marginTop="10dp"
+        android:text="@string/discount_member"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvJumlahBayar"
+        android:layout_below="@+id/tvDiscMember"
+        android:layout_marginTop="10dp"
+        android:text="@string/jumlah_bayar"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvTerimaKasih"
+        android:layout_below="@+id/tvJumlahBayar"
+        android:layout_marginTop="40dp"
+        android:text="@string/terima_kasih_sudah_berbelanja_di_tempat_kami"
+       android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btnPrintNota"
+        android:layout_below="@id/tvTerimaKasih"
+        android:layout_marginTop="40dp"
+        android:text="@string/print_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+</RelativeLayout>

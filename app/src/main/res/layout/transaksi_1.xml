@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutNamaPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNamaPelanggan"
+            android:inputType="text"
+            android:hint="@string/nama_pelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layoutAlamatPelanggan"
+        android:layout_below="@+id/layoutNamaPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAlamatPelanggan"
+            android:inputType="text"
+            android:hint="@string/alamat_pelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/jenisKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutAlamatPelanggan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/jenis_kelamin"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/groupRadiojk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutAlamatPelanggan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/jenisKelamin"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/buttonPria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pria"
+            android:textSize="15sp"
+           android:textColorHint="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/buttonPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/perempuan"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tipePelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupRadiojk"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/tipe_pelanggan"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/namaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupRadiojk"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tipePelanggan"
+        android:text="@string/nama_barang"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/groupRadioTP"
+        android:layout_below="@+id/tipePelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/buttonGold"
+            android:text="@string/gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"
+            />
+
+        <RadioButton
+            android:id="@+id/buttonSilver"
+            android:text="@string/silver"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            />
+
+        <RadioButton
+            android:id="@+id/buttonBiasa"
+            android:text="@string/biasa"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            />
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/groupRadioNB"
+        android:layout_below="@+id/namaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/groupRadioTP"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="80dp"
+        >
+
+        <RadioButton
+            android:id="@+id/buttonAndroid"
+            android:text="@string/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"
+            />
+
+        <RadioButton
+            android:id="@+id/buttonIphone"
+            android:text="@string/iphone"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            />
+
+        <RadioButton
+            android:id="@+id/buttonWindowsp"
+            android:text="@string/windows_phone"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            />
+    </RadioGroup>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layoutJumlahBarang"
+        android:layout_below="@+id/groupRadioTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etJumlahBarang"
+            android:inputType="number"
+            android:hint="@string/jumlah_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColorHint="@color/black"
+            android:textSize="15sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutJumlahBarang"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="clickProses"
+        android:text="@string/proses" />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutJumlahBarang"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/btnProses"
+        android:onClick="clickCancel"
+        android:text="@string/cancel" />
+
+    <TextView
+        android:layout_below="@+id/btnCancel"
+        android:text="@string/muhammad_reda"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
